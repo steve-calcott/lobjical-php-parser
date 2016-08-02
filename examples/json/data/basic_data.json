@@ -1,0 +1,78 @@
+{
+    "customers": [
+        {
+            "id": 123,
+            "enabled": true,
+            "details": {
+                "name": "Jo Bloggs",
+                "contact": {
+                    "email": "job@lobjical.net",
+                    "zip": "98761",
+                    "phone": null
+                }
+            },
+            "customer_type": "personal",
+            "orders": [
+                {
+                    "product": "bulldog_clip",
+                    "quantity": 100,
+                    "price": 0.05
+                },
+                {
+                    "product": "envelope",
+                    "quantity": 500,
+                    "price": 0.01
+                },
+                {
+                    "name": "rubber_band",
+                    "quantity": 900,
+                    "price": 0.02
+                }
+            ]
+        },
+        {
+            "id": 124,
+            "enabled": true,
+            "details": {
+                "name": "Mo Bloggs",
+                "contact": {
+                    "email": "mo@lobjical.net",
+                    "zip": "98765",
+                    "phone": "04443817172"
+                }
+            },
+            "customer_type": "personal",
+            "orders": [
+                {
+                    "product": "bulldog_clip",
+                    "quantity": 100,
+                    "price": 0.05
+                },
+                {
+                    "product": "envelope",
+                    "quantity": 500,
+                    "price": 0.01
+                },
+                {
+                    "name": "rubber_band",
+                    "quantity": 900,
+                    "price": 0.02
+                }
+            ]
+        },
+        {
+            "id": 125,
+            "enabled": false,
+            "details": {
+                "name": "Bo Peep",
+                "contact": {
+                    "email": "bo@somethingelse.net",
+                    "zip": "90210",
+                    "phone": "03847576611"
+                }
+            },
+            "customer_type": "business",
+            "orders": []
+        }
+    ]
+}

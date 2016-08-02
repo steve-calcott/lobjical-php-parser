@@ -1,0 +1,48 @@
+{
+	"AND": [
+		{
+			"NOT": [
+				{
+					"eq": {
+						"property": "enabled",
+						"value": false
+					}
+				}
+			]
+		},
+		{
+			"contains": {
+				"property": "details.name",
+				"values": ["smith", "brown", "bloggs"]
+			}
+		},
+		{
+			"gt": {
+				"property": "#orders",
+				"value": 0
+			}
+		},
+		{
+			"OR": [
+				{
+					"lte" : {
+						"property": "orders.*.quantity",
+						"value": 500
+					}
+				},
+				{
+					"gte" : {
+						"property": "orders.+.price",
+						"value": 0.05
+					}
+				}
+		   ]
+        },
+		{
+			"eq": {
+				"property": "details.contact.zip",
+				"value": "$zips"
+			}
+		}
+	]
+}
